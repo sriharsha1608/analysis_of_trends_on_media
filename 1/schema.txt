@@ -1,0 +1,28 @@
+CREATE TABLE twitter_data (
+   id text primary key,
+   content text,
+   author_id text,
+   created_at timestamp,
+   users text
+);
+
+CREATE TABLE reddit_data (
+   id text primary key,
+   subreddit text,
+   title text,
+   selftext text,
+   upvote_ratio text,
+   ups text,
+   downs text,
+   score text
+);
+
+CREATE TABLE hn_data (
+   id bigint primary key,
+   by text,
+   descendants bigint,
+   score bigint,
+   time bigint,
+   title text,
+   url text
+);
